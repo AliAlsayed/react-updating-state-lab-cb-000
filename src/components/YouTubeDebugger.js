@@ -29,8 +29,10 @@ export default class DigitalClicker extends React.Component {
   handleResolution = () => {
     this.setState({
       settings: {
-        ...this.state.settings.video,
-        resolution: '720p'
+        ...this.state.settings,
+        video: {
+          resolution: '720p'
+        }
       }
     })
   }
